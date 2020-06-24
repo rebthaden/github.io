@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+   
+    <title>Max Levy Architect </title>
+
+   <header class="heading clearfix">
+     <div class="drop_menu">
+        <a class="site_logo" href="index.html"> <h2> MaxLevy </h2></a>
+          <ul id="dropdown">
+            <li><a href="vitae.html">Vitae </a></li>
+            <li><a href="studio.html">Studio </a></li>
+            <li><a href="contact.html">Contact </a></li>
+          </ul>
+     </div>
+
+     <nav id="primary_nav">
+      <ul>
+        <li><a href="writings.html">Words</a></li>
+        <li><a href="drawings.html">Drawings</a></li>
+        <li><a href="buildings.html">Buildings</a></li>
+       </ul>
+       </nav>
+    </header>
+</head>
+
+
+<body class="no-touch">
+
+
+  <div class="wrap">
+    
+    <!-- Define all of the tiles: -->
+    <div class="box">
+      <div class="boxInner">
+        <a href="buildings/naturalist.html">
+          <img src="images/buildings/thumbs/00-v.jpg" alt="naturlist house">
+          <div class="titleBox">Naturalist's House <br><small>(in progress)</small></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="boxInner">
+        <a href="buildings/woodland.html">
+          <img src="images/buildings/thumbs/00-u.jpg" alt="woodland retreat">
+          <div class="titleBox">Woodland Retreat <br><small>(in progress)</small></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="boxInner">
+        <a href="buildings/bahamas.html">
+          <img src="images/buildings/thumbs/00-w.jpg" alt="Bahamas Cottage">
+          <div class="titleBox">Bahamas Cottage <br><small>(in progress)</small></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="boxInner">
+        <a href="buildings/stretto.html">
+          <img src="images/buildings/thumbs/00-x.jpg" alt="Stretto House">
+          <div class="titleBox">Stretto House Addition</div>
+        </a>
+      </div>
+    </div>
+      
+    <div class="box" id="oaks">
+      <div class="boxInner">
+        <a href="buildings/oaks.html">
+          <img src="images/buildings/thumbs/00-z.jpg" alt="Oaks Residence">
+          <div class="titleBox">Oaks Residence</div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="box" id="elms">
+      <div class="boxInner">
+        <a href="buildings/elms.html">
+          <img src="images/buildings/thumbs/00-y.jpg" alt="Elms Residence">
+          <div class="titleBox">Elms Residence</div>
+        </a>
+      </div>
+    </div>
+
+  
+
+    
+  </div>
+  <!-- /#wrap -->
+
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript">
+      var mobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(Windows Phone)|(iemobile)|(WPDesktop)/i);
+
+        jQuery(function($) {
+            $('.boxInner').on("touchstart", function (e) {
+              'use strict'; //satisfy code inspectors
+              var link = $(this); //preselect the link
+              if (link.hasClass('hover')) {
+                  return true;
+              } else {
+                  link.addClass('hover');
+                  $('a.taphover').not(this).removeClass('hover');
+                  e.preventDefault();
+                  return false; //extra, and to make sure the function has consistent return points
+              }
+          });
+        });
+
+    </script>
+    
+   
+
+
+  
+</body>
+</html>

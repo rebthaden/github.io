@@ -1,0 +1,244 @@
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      background: #EEE;
+      font: 10px/13px 'Lucida Sans',sans-serif;
+
+    }
+    .wrap {
+      overflow: hidden;
+      margin: auto;
+      padding: 0 8%;
+      margin-top: 40px;
+
+    }
+    .box {
+      float: left;
+      position: relative;
+      width: 20%;
+      padding-bottom: 20%;
+      
+    }
+    .boxInner {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      top: 20px;
+      bottom: 20px;
+      overflow: hidden;
+    }
+    .boxInner img {
+      width: 100%;
+    }
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: -50px;
+      font-size: .9em;
+      background: #fff;
+      color: #A59E97;
+      padding-top: 5px;
+      text-align: center;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+
+
+
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+    
+    .boxInner:active {
+      cursor: pointer;
+    } 
+
+    .boxInner:focus {
+        cursor: pointer;
+      }
+
+  
+
+   
+
+    /* OWL [Layout
+============================================ */
+
+.owlcontainer {
+  margin: auto;
+  display: block;
+  padding-right: 2em;
+  padding-left: 2em;
+/*  max-width: 1600px;*/
+  
+}
+
+
+
+
+
+#carousel .item img{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+
+ 
+
+
+
+    /* END OF OWL Layout
+============================================ */
+
+
+    @media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+     /* .box {
+        width: 100%;
+        padding-bottom: 100%;
+      }*/
+
+
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+    
+      
+      .boxInner .titleBox {
+        font-size: .6rem;
+      }
+
+
+    }
+   
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      /*.box {
+        width: 50%;
+        padding-bottom: 50%;
+      }*/
+        .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+     
+
+      .boxInner .titleBox {
+        font-size: .8em;
+      }
+
+    }
+
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+      .boxInner {
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      top: 40px;
+      bottom: 40px;
+      overflow: hidden;
+    }
+/*
+  .owlcontainer {
+    max-width: 800px;
+    }*/
+
+    }
+    
+    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+      /* Medium desktop: 4 tiles */
+      /*.box {
+        width: 25%;
+        padding-bottom: 25%;
+      }*/
+        .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+      .boxInner {
+      position: absolute;
+      left: 70px;
+      right: 70px;
+      top: 70px;
+      bottom: 70px;
+      overflow: hidden;
+    }
+  /*.owlcontainer {
+    max-height: 625px;
+
+    }*/
+
+  }
+
+  @media only screen and (max-width: 1290px) {
+  
+ .owlcontainer {
+    max-height: 1200px;
+
+    }
+      
+
+  }
+
+  @media only screen and (min-width : 1290px) {
+       .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+      .boxInner {
+      position: absolute;
+      left: 70px;
+      right: 70px;
+      top: 70px;
+      bottom: 70px;
+      overflow: hidden;
+    }
+      
+     #colum_videoIn {
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+      
+
+   /* .owlcontainer {
+    max-width: 1600px;
+    }*/
+
+
+
+
+  }
+
+
+@media screen and (orientation: portrait) {
+    #colum_video {
+       margin-top: 25%;
+    }
+    
+     #colum_videoIn {
+        margin-left: -30px;
+         margin-right: -30px;
+    }
+    
+    
+}
+
+  
+
+  </style>
+  <!-- Enable media queries for old IE -->
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->

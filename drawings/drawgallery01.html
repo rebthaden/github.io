@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <script src="js/picturefill.min.js" async></script>
+
+    <title>Max Levy Architect </title>
+</head>
+<body>
+   <header class="heading clearfix">
+     
+     <div class="drop_menu">
+        <a class="site_logo" href="../index.html"> <h2> MaxLevy </h2></a>
+          <ul id="dropdown">
+            <li><a href="../vitae.html">Vitae </a></li>
+            <li><a href="../studio.html">Studio </a></li>
+            <li><a href="../contact.html">Contact </a></li>
+          </ul>
+     </div>
+
+    <nav id="primary_nav">
+      <ul>
+        <li><a href="../writings.html">Words</a></li>
+        <li><a  id="a" href="../drawings.html" onClick="a_onClick()">Drawings</a></li>
+        <li><a href="../buildings.html">Buildings</a></li>
+       </ul>
+    </nav>
+  </header>
+
+<!-- owl carousel -->
+  <div class="owlcontainer">
+    <div id="carousel" class="owl-carousel owl-theme">
+      <div class="item" id="d1">
+        <picture>
+          <source
+          media="(orientation: portrait)"
+           
+            srcset="../images/drawings/image1-vert.jpg"/>
+          
+          <source
+            srcset="
+            ../images/drawings/image1-small.jpg">
+          
+          <img
+            src="../images/drawings/image1-small.jpg"
+            alt="Max Levy sketch"/>
+        </picture>
+
+      </div>
+    
+<!-- end of owl carousel -->
+
+ <script src="../js/jquery-1.12.0.min.js"></script>
+
+ <!--    <script>
+
+        $(document).keydown(function (e) {
+           var key = e.which;
+           if(key == 38) { // the enter key code
+             alert("The up arrow was clicked.");
+             $('#a').trigger("#a");
+              // return false;  
+            } else if (event.keyCode == 40) {
+              alert("The down arrow was clicked.");
+           // go right
+           $('#a').click();
+          }
+        });
+
+
+    </script> -->
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+
+    <!-- owl styles -->
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/owl.theme.css">
+    <link rel="stylesheet" href="../css/owl.transitions.css">
+
+    <title>Max Levy Architect </title>
+</head>
+<body>
+   <header class="heading clearfix">
+     <div class="drop_menu">
+        <a class="site_logo" href="../index.html"> <h2> MaxLevy </h2></a>
+          <ul id="dropdown">
+            <li><a href="../vitae.html">Vitae </a></li>
+            <li><a href="../studio.html">Studio </a></li>
+            <li><a href="../contact.html">Contact </a></li>
+          </ul>
+     </div>
+
+   <nav id="primary_nav">
+    <ul>
+      <li><a href="../writings.html">Words</a></li>
+      <li><a href="../drawings.html">Drawings</a></li>
+      <li><a href="../buildings.html">Buildings</a></li>
+     </ul>
+     </nav>
+  </header>
+
+
+      <!-- owl carousel -->
+			<div class="owlcontainer">
+				<div id="carousel" class="owl-carousel owl-theme">
+					<div class="item">
+						<picture>
+							<source
+							media="(orientation: portrait)"
+								srcset="../images/buildings/woodland/wd-1-vert.jpg"/>
+							<source
+								srcset="
+								../images/buildings/woodland/wd-1.jpg">
+							<img
+								src="../images/buildings/woodland/wd-1.jpg"
+								alt="Woodland retreat"/>
+						</picture>
+					</div>
+		
+					<div class="item">
+						<picture>
+							<source
+							media="(orientation: portrait)"
+								srcset="../images/buildings/woodland/wd-2-vert.jpg"/>
+							<source
+								srcset="
+								../images/buildings/woodland/wd-2.jpg">
+							<img
+								src="../images/buildings/woodland/wd-2.jpg"
+								alt="Woodland retreat"/>
+						</picture>
+					</div>
+					<div class="item">
+						<picture>
+							<source
+							media="(orientation: portrait)"
+								srcset="../images/buildings/woodland/wd-3-vert.jpg"/>
+							<source
+								srcset="
+								../images/buildings/woodland/wd-3.jpg">
+							<img
+								src="../images/buildings/woodland/wd-3.jpg"
+								alt="Woodland retreat"/>
+						</picture>
+					</div>
+					<div class="item">
+						<picture>
+							<source
+							media="(orientation: portrait)"
+								srcset="../images/buildings/woodland/wd-4-vert.jpg"/>
+							<source
+								srcset="
+								../images/buildings/woodland/wd-4.jpg">
+							<img
+								src="../images/buildings/woodland/wd-4.jpg"
+								alt="Woodland retreat"/>
+						</picture>
+					</div>
+					<div class="item">
+						<picture>
+							<source
+							media="(orientation: portrait)"
+								srcset="../images/buildings/woodland/wd-5-vert.jpg"/>
+							<source
+								srcset="
+								../images/buildings/woodland/wd-5.jpg">
+							<img
+								src="../images/buildings/woodland/wd-5.jpg"
+								alt="Woodland retreat"/>
+						</picture>
+					</div>
+					<div class="item">
+						<picture>
+							<source
+							media="(orientation: portrait)"
+								srcset="../images/buildings/woodland/wd-6-vert.jpg"/>
+							<source
+								srcset="
+								../images/buildings/woodland/wd-6.jpg">
+							<img
+								src="../images/buildings/woodland/wd-6.jpg"
+								alt="Woodland retreat"/>
+						</picture>
+					</div>
+					<div class="item">
+						<picture>
+							<source
+							media="(orientation: portrait)"
+								srcset="../images/buildings/woodland/wd-7-vert.jpg"/>
+							<source
+								srcset="
+								../images/buildings/woodland/wd-7.jpg">
+							<img
+								src="../images/buildings/woodland/wd-7.jpg"
+								alt="Woodland retreat"/>
+						</picture>
+					</div>
+					<div class="item">
+						<picture>
+							<source
+							media="(orientation: portrait)"
+								srcset="../images/buildings/woodland/wd-8-vert.jpg"/>
+							<source
+								srcset="
+								../images/buildings/woodland/wd-8.jpg">
+							<img
+								src="../images/buildings/woodland/wd-8.jpg"
+								alt="Woodland retreat"/>
+						</picture>
+					</div>
+			</div>
+			</div>
+		
+<!-- end of owl carousel -->
+
+
+<!-- javascript -->
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+
+    <script>
+      $(document).ready(function() {
+ 
+        $("#carousel").owlCarousel({
+          autoplay : true,
+          navigation : true, // Show next and prev buttons
+          navigationText: ["<img src='..//images/prev.gif'>","<img src='../images/next.gif'>"],
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true,
+          transitionStyle: "fade"
+        
+        });
+       
+      });
+
+        jQuery(document.documentElement).keyup(function (event) {    
+
+        var owl = jQuery(".owl-carousel");
+
+        // handle cursor keys
+        if (event.keyCode == 37) {
+           // go left
+           owl.trigger('owl.prev');
+        } else if (event.keyCode == 39) {
+           // go right
+           owl.trigger('owl.next');
+        }
+
+    });
+
+    </script>
+</body>
+</html>

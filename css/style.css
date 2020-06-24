@@ -1,0 +1,454 @@
+/*--------- Main Styles -----------*/
+
+html {
+  color: #A59E97;
+  font-size: 1em;
+  box-sizing: border-box;
+  height: 100%;
+  margin: auto;
+ }
+
+
+body {
+  padding:10 10%;
+  position: relative;
+  margin: 0;
+  padding-bottom: 20px;
+  max-height: 100%;
+}
+img {max-width: 100%;}
+.wrapper {
+  max-width: 1000px;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin: auto;
+}
+
+.blank {
+  max-width: 600px;
+  height: 400px;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+#intro {margin: 20px auto; display: table;
+  -webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-right: 2em;
+}
+
+
+a:link {
+  color: #beb7b0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #beb7b0;
+}
+
+a:hover {
+  color: #aea7a0;
+}
+
+
+
+/*---------- Header, Logo, Navigation--------- */
+
+
+
+.heading {
+  margin: auto;
+  padding-bottom: 2.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: -10px;
+  max-width: 1600px;
+
+}
+
+
+/*-------- DROP DOWN MENU--------- */
+
+
+.drop_menu {
+  position: relative;
+  display: inline-block;
+
+}
+
+.drop_menu #dropdown {
+  position: absolute;
+  top: 100%;
+  left: -50px;
+  margin: 0;
+  margin-top:-30px;
+  padding-right: 10px;
+  display: none;
+  z-index: 1;
+  background-color: #fff;
+  }
+
+.drop_menu:hover #dropdown{
+  display: block;
+  
+}
+
+#dropdown li {
+  list-style-type: none;
+  padding-right: 1em;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
+
+  
+}
+
+#dropdown li a {
+  padding: 1em;
+}
+
+
+.site_logo {
+  
+/*  float: left;*/
+  font-size: 1.7em;
+  font-weight: 700;
+  letter-spacing: -3px;
+
+  }
+
+
+  #primary_nav {
+    margin-top: -75px;
+
+
+  }
+
+#primary_nav li{
+  display: inline;
+  float: right;
+  padding-left: 5px;
+  
+  
+}
+
+#primary_nav li a {
+  padding: 1.2em;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+
+
+/*------------Preview Boxes------------ */
+.section {
+  clear: both;
+  margin: auto;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.5%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:]; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.16%; }
+.span_1_of_3 { width: 32.33%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+
+
+
+
+/* ----------------ARTICLES------------- */
+
+#words .box:hover, #drawings .box:hover, .up:hover {opacity: .7;}
+
+
+.title {
+  padding-bottom: 1.5em;
+
+}
+
+.writings {
+  line-height: 1.5em;
+  margin: auto;
+  max-width: 900px;
+  text-align: justify;
+ }
+
+
+.up {
+  float: right;
+  padding-bottom: 20px;
+
+}
+
+.writing-photos {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+#frank .text {margin-top: 0;}
+
+.fr-photo {max-width: 100%; margin: 30px 0 -20px; margin-left: -5px; width: 100%; max-height: 800px;}
+.fr-photo.vert {width: auto;}
+.fr-photo:first-of-type {margin: 20px 0-20px; margin-left: -5px;}
+.fr-photo:last-of-type {margin-top: 10px; margin-left: 0;}
+
+#fortuna {
+  margin-top: -30px;
+  padding-right: 6px;
+  line-height: 1.4em;
+  font-size: .8em;
+}
+
+#artistEye .writing-photos {margin-top: -50px;}
+
+
+/* ----------------STUDIO-------------- */
+ 
+
+ .studio {
+  font-size: .9em;
+  line-height: 1.5em;
+  padding-top: 1.5em;
+ }
+  
+#studiotext {
+  max-width: 480px;
+}
+
+
+
+
+ /* ----------------VITAE-------------- */
+
+
+  .vitae-photo {
+    width: 100%;
+    padding-bottom: 1em;
+    max-width: 350px;
+
+  }
+
+ /* ----Table----- */
+
+ .dates_col {
+    font-size: .9em;
+ }
+
+ .dates {
+   width: 25%;
+  float: left;
+  line-height: 1.5em;
+ }
+
+.info {
+  float: right;
+  width: 73%;
+  line-height: 1.5em;
+}
+
+.table {
+  width:100%;
+  line-height: 1.5em;
+
+}
+
+#dates {
+  width: 125px;
+}
+
+td {
+ /* border: 1px solid whitesmoke;*/
+  vertical-align: top;
+}
+
+
+ /* ----------------CONTACT-------------- */
+
+ .contact_head{
+  margin-top: 2em;
+ }
+
+ .contact {
+    line-height: 1.5em;
+ }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* ----------------VIDEOS-------------- */
+
+#video {
+  max-width: 800px;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height:0;
+  overflow:hidden;
+  }
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ .web_design {
+    font-size: .7em;
+    font-weight: 200;
+ }
+
+
+
+
+/* ----------------MEDIA QUERIES-------------- */
+
+
+@media only screen and (min-width : 600px) {
+
+      .title {
+        width: 19%;
+        float: left;
+        max-width: 100%;
+        padding-left: .5em;
+        margin-top: -20px;
+
+        }
+
+        .title p {
+          line-height: 2em;
+          font-size: .9em;
+        }
+
+      .writings {
+        float: right;
+        width: 79%;
+        font-size: .9em;
+         max-width: 800px;
+      }
+			
+    
+}
+
+
+ @media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+      /*.box {
+        width: 100%;
+        padding-bottom: 100%;
+      }*/
+      
+
+      #primary_nav{
+        font-size: .8em;
+        margin-top: -35px;
+
+      }
+      #primary_nav li a {
+        padding: .7em;
+       }
+
+
+      #dropdown{
+       font-size: .8em;
+      }
+
+
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+
+      .text h3 {
+        font-size: .8em;
+      }
+
+      .text {
+        padding-left: .5em;
+      }
+
+
+      .vitae-photo {
+        max-width: 210px;
+      }
+      
+    
+      .table {
+        font-size: .4em;
+      }
+
+      .articles {
+        font-size: .8em;
+      }
+
+      .writings {
+        font-size: .8em;
+      }
+
+      .title {
+        font-size: .9em;
+        margin-top: 4em;
+      }
+
+    }
+
+  @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      /*.box {
+        width: 50%;
+        padding-bottom: 50%;
+      }*/
+    
+
+      .vitae-photo {
+        max-width: 275px;
+
+      }
+      
+
+      .table {
+        font-size: .8em;
+      }
+
+    #page3_wrap {
+      padding-left: 2em;
+    }
+  
+    
